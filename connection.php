@@ -1,5 +1,5 @@
 <?php
-$con=mysqli_connect("localhost","root","","spark_Hastakala");
+$con=mysqli_connect("localhost","root","","GearUp");
 
 if(mysqli_connect_error()){
     echo"
