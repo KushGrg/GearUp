@@ -1,0 +1,83 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+    background: rgb(233, 233, 233);
+  }
+
+  .container{
+    display: flex;
+    width: 1200px;
+    margin: auto;
+  }
+  nav{
+    position: sticky;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    height: 110vh;
+    background: #fff;
+  }
+/* to fix elements of nav */
+  .navbar{
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .logo{
+    margin: 2rem 0 1rem 0;
+    padding-bottom: 3rem;
+    display: flex;
+    align-items: center;
+  }
+  .logo img{
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  /* h1{
+    margin-left: 2rem;
+    text-transform: uppercase;
+    margin-bottom:10%;
+    color: rgb(85, 83, 83);
+    font-size: large;
+  font-family: "Poppins", sans-serif;
+
+  } */
+  ul{
+    margin: 0 auto;
+  }
+  /* list maintain */
+  li{
+    padding-bottom: 2rem;
+  }
+  /* Nav colors and font */
+  li a{
+    font-size: 16px;
+    color: rgb(85, 83, 83);
+  }
+/* nav ko list maintain */
+  nav i{
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  .logout{
+    position: absolute;
+    bottom: 20px;
+  }
+
+
+  
+
+
+  

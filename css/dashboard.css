@@ -1,0 +1,424 @@
+/* admin dashboard */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+  }
+  body{
+      background: rgb(255, 255, 255);
+    }
+  
+    .container{
+      display: flex;
+      /* width: 100%; */
+      /* margin: auto; */
+      
+  /* background-color: red; */
+}
+    /* nav bar style starts */
+    nav{
+      position: sticky;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 250px;
+      height: 110vh;
+      background: #12266e;
+     
+    }
+   
+  /* to fix elements of nav */
+    .navbar{
+      width: 80%;
+      margin: 0 auto;
+      
+    }
+    
+    .logo{
+      margin: 2rem 0 1rem 0;
+      padding-bottom: 3rem;
+      display: flex;
+      align-items:left;
+    }
+    .logo img{
+      width: 240px;
+      height: 50px;
+      border-radius: 50%;
+    }
+    /* h1{
+      margin-left: 2rem;
+      text-transform: uppercase;
+      margin-bottom:10%;
+      color: rgb(85, 83, 83);
+      font-size: large;
+    font-family: "Poppins", sans-serif;
+  
+    } */
+    ul{
+      margin: 0 auto;
+    }
+    /* list maintain */
+    li{
+      padding-bottom: 2rem;
+    }
+    /* Nav colors and font */
+    li a{
+      font-size: 17px;
+      color:rgb(255, 255, 255);
+    }
+    li a:hover{
+      color:rgb(0, 255, 242);
+    }
+  /* nav ko list maintain */
+    nav i{
+      width: 50px;
+      font-size: 20px;
+      text-align: center;
+    }
+    
+    .logout{
+      position: absolute;
+      bottom: 20px;
+    }
+  
+  
+    
+  
+  
+    
+
+
+
+/* admin dashboard left part record design */
+.title{
+      background-color:rgb(255, 255, 255);
+      width:100%;
+      /* box-shadow: black; */
+      padding:2rem;
+      /* border-radius: .5rem; */
+      border-bottom: 0.5px solid  rgb(11, 11, 11);
+      margin-bottom: 2%;
+
+    /* box-shadow: 6px 5px 27px -4px black; */
+    /* position:fixed; */
+
+}
+
+    .dashboard{
+      background-color:white;
+
+    }
+/* box content */
+    .dashboard .box-container{
+      /* display: grid; */
+      /* display:flex; */
+      /* width:100%; */
+      /* align-content: baseline; */
+      /* margin-left: 2%; */
+    /* width:25%; */
+      /* display full area and adjust rows */
+      /* grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); */
+      /* row-gap: 1%; */
+      /* gap:1.3rem; */
+      /* max-width: 1200px; */
+      /* align-items: flex-start; */
+      /* margin:2% 2% ; */
+
+    /* width:25%; */
+
+      display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* width: 100%; */
+  gap: 1.3rem;
+  margin: 2% 2%;
+
+
+  
+    }
+/* box vitrako content */
+     .dashboard .box-container .box{
+      text-align: center;
+      /* margin-left: 4%; */
+      width:17rem;
+      height:10rem;
+      background-color:rgb(255, 255, 255);
+      /* box-shadow: black; */
+      padding:2rem;
+      border-radius: .5rem;
+      /* border:1px solid black; */
+      transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+
+    }
+    .dashboard .box-container .box:hover {
+        background-color: #f6f4f4; /* Set the desired background color on hover */
+        cursor: pointer; /* Show cursor as pointer on hover */
+      }
+
+    /* .dashboard .box-container .box h3{
+      font-size: 4.5rem;
+      color:var(--black);
+    } */
+
+    .dashboard .box-container .box p{
+      /* padding:1.5rem; */
+      border-radius: .5rem;
+      /* background-color:rgb(255, 255, 254); */
+      color:lightcoral;
+      /* border:var(--border); */
+      /* margin-top: 2rem; */
+      /* font-size: 2rem; */
+      /* border:1px solid black; */
+      /* box-shadow: 6px 5px 27px -4px black; */
+      /* transition: background-color 0.3s ease; */
+
+    } 
+    
+
+
+
+
+
+/* admin addproduct */
+.add-products form{
+ /* position:sticky; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+   /* justify-content: center;   */
+
+
+  /* display:grid; */
+  /* border:1px solid black; */
+
+  max-width: 50rem;
+  border-radius: .5rem;
+  background-color:white;
+  /* border:1px solid black; */
+  padding:1rem;
+  text-align: center;
+  /* margin:0 auto; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 2% 2%;
+
+ }
+ 
+ /* .add-products form h3{
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    color:black;
+    margin-bottom: 1rem;
+ } */
+ /* input box */
+ .add-products form .box{
+    width: 100%;
+    margin:0.6rem 0;
+    font-size: 1.2rem;
+    /* color:black; */
+    border-radius: .3rem;
+    background-color:#fff;
+    padding:1.1rem 1.2rem;
+    border:2px solid black;
+    /* text-align: center; */
+ }
+ 
+ .add-products form textarea{
+    height: 15rem;
+    resize: none;
+ }
+
+ .add-products form .btn{
+    /* font-weight: 300; */
+    /* background-color:rgb(244, 62, 62);
+    border:1px solid rgb(0, 0, 0);
+    padding: 8px 14px ;;
+    margin-top: 5px;
+    border-radius: 3px;
+    font-size: 1.3rem;
+    color:white; 
+    */
+    /* color: rgb(0, 0, 0); */
+      font-weight: 500;
+      background-color:rgb(228, 26, 26);
+      border:2px solid black;
+      padding: 3px 6px ;;
+      /* margin-top: 5px; */
+      border-radius: 3px;
+      font-size: 1.3rem;
+      color:white; 
+      /* display: flex; */
+      text-align: center;
+      /* align-items: center; */
+      width:20%;
+      /* display:grid; */
+         /* justify-content: center;  */
+      /* margin-left: 15rem;  */
+
+
+
+ }
+ .add-products form .btn:hover{
+    color:rgb(0, 0, 0);
+
+ }
+
+
+
+
+/* update product  */
+ .update-product form{
+  max-width: 50rem;
+  border-radius: .5rem;
+  background-color:white;
+  /* border:1px solid black; */
+  padding:1rem;
+  text-align: center;
+  /* margin:0 auto; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 5% 5%;
+}
+
+.update-product form h3{
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  color:black;
+  margin-bottom: 1rem;
+}
+
+.update-product form .box{
+  width: 100%;
+  margin:.5rem 0;
+  font-size: 1rem;
+  color:black;
+  border-radius: .5rem;
+  background-color:#ffffff;
+  padding:1.2rem 1.2rem;
+  border:1px solid black;
+}
+
+.update-product form textarea{
+  height: 10rem;
+  resize: none;
+}
+
+.update-product .image{
+  height: 10rem;
+  border:1px solid black;
+  border-radius: .5rem;
+}
+
+.option-btn {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-top: .5;
+    font-weight: 500;
+    background-color:rgb(33, 247, 133);
+    border:1px solid black;
+    /* padding: 8px 15px ;; */
+    /* margin-top: 5px; */
+    border-radius: 3px;
+    font-size: 1rem;
+    margin-right:1%;
+    padding:.5%;
+    }
+
+
+ 
+/* user and product table display same */
+
+.users {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+ .user-table {
+  width: 100%;
+  /* border-collapse: collapse; */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  /* width: 100%; */
+  /* gap: 1.3rem; */
+  margin: 2% 0%;
+
+  
+}
+
+.user-table th,
+.user-table td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  /* margin-right: 10%; */
+}
+
+.user-table th {
+  background-color: #f2f2f2;
+}
+
+.user-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* fixing table ko image */
+.user-table tbody .image {
+  height:90px;
+  width:100px;
+  /* border:1px solid black; */
+}
+
+.delete-btn {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-top: .5;
+    font-weight: 500;
+    background-color:rgb(228, 26, 26);
+    border:1px solid black;
+    /* padding: 8px 15px ;; */
+    /* margin-top: 5px; */
+    border-radius: 3px;
+    font-size: 1rem;
+    padding:.5%;
+}
+
+
+.delete-box {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+ 
+
+     /* z-index: 9999; */
+}
+
+.delete-box.active {
+  display: block;
+}
+ 
+
+ /* admin order section */
+
+ 
+/* Admin Quote Section */
+
+ 
+ 

@@ -1,0 +1,87 @@
+/* style for register box */
+#registerpopup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size:100%;
+    height: 85vh;
+    width: 100%;
+    background-image:url("../img/op4.png") ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.popup{
+    max-width: 420px;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(9px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px -5px black;
+}
+.popup h2{
+    font-size: 22px;
+    color: #0b0217;
+    text-align: center;
+}
+.input_boxR{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 28px;
+    display: flex;
+}
+.input_boxR input{
+    background:transparent;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0 30px;
+    color: #333;
+    transition: all 0.2s ease;
+    border-bottom: 1.5px solid #aaaaaa;
+}
+.input_boxR input:focus{
+    border-color:#088178 ;
+    }
+.input_boxR i{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size:20px ;
+    }
+    .input_boxR i.fa-lock,
+    .input_boxR i.fa-user,
+    .input_boxR i.fa-envelope
+    {
+        left: 0;
+    }
+    .input_boxR input:focus~i.fa-user,
+    .input_boxR input:focus~i.fa-lock,
+    .input_boxR input:focus~i.fa-envelope
+    {
+        color: #088178;
+    }
+    
+    .input_boxR i.fa-eye-slash{
+        right:0 ;
+        font-size: 18px;
+    }
+  .popup #RegButton {
+        background: #088178;
+        margin-top: 30px;
+        width: 100%;
+        padding: 10px 0;
+        border: none;
+        border-radius: 10px;
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+    }
+#Register_signup{
+        font-size: 12px ;
+        text-align: center;
+        margin-top: 10px;
+    }
